@@ -23,7 +23,6 @@ import 'package:bpsense_app/test_page.dart';
 import 'package:bpsense_app/webview_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-import 'package:permission_handler/permission_handler.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,9 +31,6 @@ Future main() async {
   //     defaultTargetPlatform == TargetPlatform.android) {
   //   await InAppWebViewController.setWebContentsDebuggingEnabled(kDebugMode);
   // }
-
-  await Permission.camera.request();
-  await Permission.storage.request();
 
   runApp(const MyApp());
 }
