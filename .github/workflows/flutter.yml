@@ -32,7 +32,7 @@ jobs:
         run: flutter pub get
 
       - name: Build APK
-        run: flutter build apk --release lib/main_prod.dart --no-tree-shake-icons
+        run: flutter build apk --release --no-tree-shake-icons
 
       # - name: Create destination directory
       #   run: mkdir -p release/
